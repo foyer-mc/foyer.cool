@@ -1,0 +1,14 @@
+title: foyer.cool
+tagline: ""
+url: ""
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "article"
+
+exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]
+
