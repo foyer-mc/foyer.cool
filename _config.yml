@@ -10,5 +10,8 @@ defaults:
     values:
       layout: "article"
 
+      sass:
+  sass_dir: css/
+
 exclude: [.scss, README.md, node_modules, gruntfile.js, package.json]
 
