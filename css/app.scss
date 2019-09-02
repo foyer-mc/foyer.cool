@@ -18,6 +18,7 @@ body{
 	font-size: 1.2vw;
 	font-family: 'favorit';
 	margin:0px;
+	line-height: 1.1;
 	background-color: $fond;
 
 }
@@ -61,13 +62,12 @@ a:hover{
 	text-decoration: none;
 }
 
-a {
-
+a{
 	color: $primaire;
 	text-decoration: none;
 }
 
-nav {
+nav{
 	margin-top: 2.5vw;
 	text-align:center;
 	font-size: 2vw;
@@ -91,6 +91,7 @@ nav {
 	margin:auto;
 	text-align: center;
 	padding-top: 15vw;
+	margin-bottom: 1vw;
 }
 
 .logo img{
@@ -98,26 +99,48 @@ nav {
 	position: center;
 }
 
-summary{
+.accueil{
 	font-size: 2vw;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	color: white;
-	height: auto;
 	margin:0 auto;
-	text-align: center;
 	text-shadow: #000 0px 0 50px;
-	line-height: 1.1;
-	padding-top:1vw;
-}
-
-main{
+	text-align: center;
 	background-image:url("/img/bg2.png");
 	height: 100vh;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 0 50px;
+}
+
+.presentation{
+	background-image:url("/img/bgcs.png");
+	height: 100vh;
+  background-position: center;
+	font-size: 2vw;
+	text-align: left;
+	padding-left:5%;
+	padding-right:5%;
+	line-height: 1.1;
+  	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 50px;
+	align-items: center;
+   justify-items: top;
+
+}
+
+.presentation h1{
+
+		text-align: left;
+}
+
+.presentation h5{
+
+		background-color: $primaire;
 }
 
 section{
@@ -145,11 +168,12 @@ p{
 }
 
 
-h1 {
-	font-family: 'favoritlining';
-	font-size: 2vw;
+h1{
+	font-size: 2.5vw;
 	margin: auto;
 	text-align:center;
+	font-family: "favoritlining";
+	margin-bottom:1.4vw;
 }
 
 h4 {
@@ -163,25 +187,22 @@ h5 {
 	font-size: 1.2vw;
 	color: black;
 	background: white;
+	text-align: center;
 	border-radius: 10rem;
 	padding: 0.3rem 1.2rem 0.3rem 1.2rem;
-	margin-left: 40%;
-	margin-right: 40%;
-	box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.1);
+	width: 15vw;
+	min-width: 15vw;
+	margin: auto;
+	box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.2);
 	transition-duration: 250ms;
 }
 
 h5:hover {
-	font-size: 1.2vw;
-	color: black;
-	background: white;
-	border-radius: 10rem;
-	padding: 0.3rem 1.2rem 0.3rem 1.2rem;
-	margin-left: 38%;
-	margin-right: 38%;
-	box-shadow: 10px 10px 60px rgba(0, 0, 0, 0.2);
+	min-width: 17vw;
+	box-shadow: 60px rgba(0, 0, 0, 0.2);
 	transition-duration: 250ms;
 }
+
 .icon{
 	width: 6%;
 	vertical-align: middle;
@@ -223,17 +244,21 @@ img{
     color: white;
 }
 
-#btnCopy{
-	border:none;
-	font-size: 2vw;
-	font-family: 'favorit';
-	background-color:$primaire;
-	color: white;
-}
-
 // -------------- MOBILE -----------------
 
 @media only screen and (max-width: 800px) {
+
+
+	body{
+	font-size: 4.5vw;
+	font-family: 'favorit';
+	margin:0px;
+	line-height: 1.1;
+	background-color: $fond;
+
+}
+
+p{font-size: 4.5vw;}
 
 	header {
 		text-align:center;
@@ -248,6 +273,13 @@ img{
 		z-index: 99;
 	}
 
+h1 {
+	font-family: 'favoritlining';
+	font-size: 4.5vw;
+	margin: auto;
+	text-align:center;
+}
+
 .ip{
 
 	background-color: $primaire;
@@ -257,30 +289,32 @@ img{
 
 .icon{
 	display: none;
-	width: 6%;
-	vertical-align: middle;
-	padding-left: 5%;
 }
 
-summary{
-	font-size: 4.5vw;
-	width: 100%;
-	height: 100%;
-	color: white;
-	height: auto;
-	margin:0 auto;
-	text-align: center;
-		text-shadow: #000 0px 0 50px;
-	line-height: 1.1;
-	padding-top:2vw;
 
-	}
+.presentation{
+
+  background-position: center;
+height: auto;
+margin-top: 4vw;
+  	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-gap: 50px;
+
+}
+
+.one{
+
+grid-row: 1;
+
+}
+.two{
+
+grid-row: 2;
+}
 
 	.logo{
-		height: auto;
-		width: 100%;
-		margin:auto;
-		text-align: center;
+	margin-bottom: 1vw;
 		padding-top: 37vw;
 
 	}
@@ -290,29 +324,21 @@ summary{
 		position: center;
 	}
 
-	h5{
-		font-size: 3vw;
-		color: black;
-		background: white;
-		border-radius: 10rem;
-		padding: 0.3rem 1.2rem 0.3rem 1.2rem;
-		margin-left: 25%;
-		margin-right: 25%;
-		box-shadow: 10px 10px 60px rgba(0, 0, 0, 0.2);
-		transition-duration: 250ms;
-	}
+h5 {
+	font-size: 3vw;
+	width: 38vw;
+	min-width: 38vw;
+	margin: auto;
+	box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.1);
+	transition-duration: 250ms;
+}
 
-	h5:hover {
-		font-size: 3vw;
-		color: black;
-		background: white;
-		border-radius: 10rem;
-		padding: 0.3rem 1.2rem 0.3rem 1.2rem;
-		margin-left: 25%;
-		margin-right: 25%;
-		box-shadow: 10px 10px 60px rgba(0, 0, 0, 0.2);
-		transition-duration: 250ms;
-	}
+h5:hover {
+	min-width: 45vw;
+	box-shadow: 10px 10px 60px rgba(0, 0, 0, 0.2);
+	transition-duration: 250ms;
+}
+
 
 	section{
 		font-size: 4.5vw;
