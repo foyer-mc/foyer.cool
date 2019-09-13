@@ -1,18 +1,20 @@
 ---
 layout: default
 ---
+<main>
 
+<aside>
+		<a href="#regles">— Règles</a>
+		<a href="#commencer">— Commencer</a>
+		<a href="#mondes">— Mondes</a>
+		<a href="#chat">— Chat</a>
+		<a href="#lier">— Lier un monde</a>
+		<a href="#carte">— La carte</a>
 
-<aside >
-		<li><a href="#regles">— Règles</a></li>
-		<li><a href="#commencer">— Commencer</a></li>
-		<li><a href="#chat">— Chat</a></li>
-		<li><a href="#mondes">— Mondes</a></li>
-		<li><a href="#plus">— Plus</a></li>
 </aside>
 
 	<section id="regles">
-		<h1>REGLES</h1>
+		<h2>REGLES</h2>
 		<p>En vous donnant le droit de gérer votre propre monde,
 		nous vous responsabilisons à son entretien, sa gestion 
 		et le respect des règles.</p>
@@ -36,7 +38,22 @@ layout: default
 	  avec le reste du serveur.</p></section>
 
 	  <section id="commencer">
-	<h1>COMMENCER SUR LE SERVEUR</h1>
+	<h2>COMMENCER SUR LE SERVEUR</h2>
+	<p>Le serveur propose aux joueurs et joueuses de créer des mondes dans lesquels ils pourront évoluer librement et sans contrainte. Pour se faire, il est indispensable de trouver un emplacement libre dans le hub du serveur. Cet emplacement deviendra ensuite le votre; vous pourrez le personnaliser et y disposer différents coffres vous permettant d'accèder à vos différents mondes.</p>
+
+	<p> La carte du hub regorge de petits villages, de sanctuaires, d'églises et de cavernes à explorer pour trouver l'endroit parfait où vous installer.<br>
+	En revanche, si vous ne souhaitez pas prendre le temps d'explorer, vous pouvez utiliser la commande suivante qui vous permettra de vous téléporter sur un emplacement libre aléatoire :
+	{% highlight shell%}/create{% endhighlight %}
+	</p>
+
+	<p> Les autres joueurs pourront, au grés de leurs ballades dans le hub, trouver votre emplacement, constituant la vitrine vers vos différents mondes.</p>
+	<p>Pour revendiquer un emplacement, il vous suffit de poser un pupitre directement sur le bloc de redstone. Le pupitre constitue alors votre point de gestion, c'est ici que vous pouvez changer de mode de jeu pour personnaliser votre emplacement, et configurer vos monde.</p>
+	<p>Vous pourez ensuite disposer les coffres dans votre emplacement et rentrer dans une interface pour les paramètrer, installer des cartes spécifiques, autoriser les joueurs, définir le mode de jeu et la difficulté.</p>
+</p>	
+</section>
+
+<section id="mondes">
+	<h2>GERER VOS MONDES</h2>
 		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -46,24 +63,24 @@ layout: default
 </section>
 
 <section id="chat">
-	<h1>PLUGIN DE CHAT</h1>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	<h2>PLUGIN DE CHAT</h2>
+<p> Pour gérer les messages entre joueurs, le serveur dispose d'un plugin de chat. <br>
+	Par défaut, les utilisateurs se trouvent dans le canal <u>global</u>
 </section>
 
-
-
-<section id="mondes">
-	<h1>GERER VOS MONDES</h1>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+<section id="lier">
+	<h2>LIER UN MONDE AVEC UN AMI</h2>
+		<p>Vous pouvez naviguer d'un monde à un autre avec le même inventaire pour aller aider vos amis, leur donner des ressources, ou partager un moment de pêche. Pour celà, il faut que les deux administrateurs des mondes décident de lier leur monde.</p>
+		<p>La commande {% highlight shell%}/linkworld{% endhighlight %} enverra une requête à votre ami qu'il pourra ensuite accepter avec la commande {% highlight shell%}/linkaccept{% endhighlight %} </p>
+		<p>Vous pouvez consulter la liste de vos mondes liés avec la commande {% highlight shell%}/linklist{% endhighlight %}</p>
+		<p>Si jamais vous souhaitez refuter l'accès à votre monde, vous pouvez utiliser la commande {% highlight shell%}/linkdestroy username{% endhighlight %}</p>
 </section>
 
+<section id="carte">
+	<h2>LA CARTE DU SERVEUR</h2>
+		<p>La carte du serveur est une carte de 3500 par 3500 blocs explorable librement et sans contraintes. Elle regorge de petits secrets vous permettant de débloquer certains aspect du serveur, notamment la gestion des mondes multiples et d'autres aspects de personnalisation. </p>
+		<p>Elle permet aussi de rendre tangible les mondes des joueurs et d'encourager l'exploration et la découverte, elle permet aux joueurs de se rencontrer, de fonder des villages et de traverser des paysages inspirés par l'Europe de l'est.</p>
+		<img alt="Un paysage de plaines dans Minecraft" src="img/bg3.jpg">
+</section>
+
+</main>
