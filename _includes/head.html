@@ -12,6 +12,34 @@
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-67165222-3"></script>
 	<!-- CSS & fonts -->
 	<link rel="stylesheet" href="/css/app.css">
-	<!-- Put your fonts here -->
 
+
+	<script type="text/javascript">
+
+		
+		window.addEventListener("load", function () {
+
+  			var random= Math.floor(Math.random() * 3) + 0;
+  				var bigSize = [
+                 	"/img/bg.jpg",
+                 	"/img/bg2.jpg",
+                 	"/img/bg2.jpg"];
+  			document.getElementById("random").style.backgroundImage="url('" + bigSize[random] + "')";
+
+ 			var img = new Image();
+				img.onload = function() {
+		    		const loader = document.querySelector(".loader");
+    				loader.className += " hidden"; // class "loader hidden"
+			};
+
+
+  			img.src = bigSize[random];
+			if (img.complete) img.onload();
+
+		console.log(document.getElementById("random").style.backgroundImage);
+		console.log(img.src);
+  			});
+
+	</script>
+  
 </head>
